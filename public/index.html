@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Programa de Colas</title>
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        height: 100%;
+        width: 100%;
+        background-color: #6951F0;
+        color: white;
+    }
+</style>
+
+<body class="container">
+    <div class="text-center" style="margin: 50px;">
+        <h1>Programa de Colas</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <div class="card text-white bg-warning mb-3">
+                <div class="card-header">Pantalla publica</div>
+                <div class="card-body">
+                    <p class="card-text">Pantalla donde se muestran los tickets que se estan atendiendo, con un maximo de 4.</p>
+                    <a class="btn btn-info btn-lg btn-block" href="publico.html">Tickets Atender</a>
+                </div>
+            </div>
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-header">Pantalla de peticion</div>
+                <div class="card-body">
+                    <p class="card-text">Pantalla para crear un ticket nuevo para ser atendido.</p>
+                    <a class="btn btn-secondary btn-lg btn-block" href="nuevo-ticket.html">Crear Tickets</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="row">
+                <div class="col-4 mx-auto text-center">
+                    <img src="./img/fila_de_espera.png" alt="" width="150">
+                </div>
+            </div>
+            <br>
+            <form action="escritorio.html">
+                <input name="escritorio" type="number" class="form-control" placeholder="Ingrese el No. o Nombre escritorio para empezar atender" autofocus required>
+                <br>
+                    <div class="col-4 mx-auto text-center">
+                        <button type="submit" class="btn btn-primary"> Ingresar </button>
+                    </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
